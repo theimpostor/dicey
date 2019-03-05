@@ -4,13 +4,19 @@ function getRandomInt (min, max) {
   return Math.floor(Math.random() * (max - min)) + min
 }
 
-function run () {
-  const lowE = document.querySelector('#low')
-  const highE = document.querySelector('#high')
-  const outE = document.querySelector('#out')
+function numbwExec () {
+  const lowE = document.querySelector('#numbw-low')
+  const highE = document.querySelector('#numbw-high')
+  const outE = document.querySelector('#numbw-out')
 
   const low = parseInt(lowE.value)
   const high = parseInt(highE.value)
   const rand = getRandomInt(low, high)
   outE.innerHTML = rand
 }
+
+function main () {
+  document.querySelector('#numbw-exec').addEventListener('click', numbwExec, false)
+}
+
+main()

@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>dicey.xyz - generate random numbers</title>
 
     <script defer src="/__/firebase/5.8.5/firebase-app.js"></script>
     <script defer src="/__/firebase/init.js"></script>
@@ -16,10 +16,14 @@
   </head>
   <body>
 
-    <input type="text" id="low">
-    <div id="out"></div>
-    <input type="text" id="high">
-    <button onclick="run()">Run</button>
+    <h1>Number between:</h1>
+    <!-- <label for="numbw-low">Low</label> -->
+    <input type="text" id="numbw-low">
+    and
+    <!-- <label for="numbw-high">High</label> -->
+    <input type="text" id="numbw-high">
+    <button id="numbw-exec">Go</button>
+    <div id="numbw-out"></div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
