@@ -1,0 +1,27 @@
+{
+  "name": "dicey.xyz",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "prestart": "webpack",
+    "start": "firebase serve --only hosting",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theimpostor/dicey.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/theimpostor/dicey/issues"
+  },
+  "homepage": "https://github.com/theimpostor/dicey#readme",
+  "devDependencies": {
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  },
+  "dependencies": {
+    "random": "^2.1.1"
+  }
+}
