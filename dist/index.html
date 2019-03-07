@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>dicey.xyz - generate random numbers</title>
+    <title>dicey.xyz - random number generator</title>
 
     <script defer src="/__/firebase/5.8.5/firebase-app.js"></script>
     <script defer src="/__/firebase/init.js"></script>
@@ -19,7 +19,7 @@
     <div class="container">
 
       <h3>Dicey.xyz</h3>
-      <p class="lead">Generate random numbers and stuff</p>
+      <p class="lead">Random numbers and stuff</p>
 
       <ul class="nav nav-tabs" id="tabs" role="tablist">
         <li class="nav-item">
@@ -29,29 +29,40 @@
           <a class="nav-link" id="die-content-tab" data-toggle="tab" href="#die-content" role="tab" aria-controls="die-content" aria-selected="false">Dice</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="kard-content-tab" data-toggle="tab" href="#kard-content" role="tab" aria-controls="kard-content" aria-selected="false">Cards</a>
+          <a class="nav-link" id="kard-content-tab" data-toggle="tab" href="#kard-content" role="tab" aria-controls="kard-content" aria-selected="false">More</a>
         </li>
       </ul>
       <div class="tab-content" id="tabsContent">
         <div class="tab-pane fade show active" id="numbw-content" role="tabpanel" aria-labelledby="numbw-content-tab">
           <div class="container">
-            <div class="row">
+            <div class="row mt-3">
               <div class="col">
-                <label for="numbw-low">Low</label>
-                <input class="form-control" type="number" id="numbw-low">
+                <!-- <label for="numbw-low">Low</label> -->
+                <input class="form-control" type="number" id="numbw-low" value=1>
+              </div>
+              <div class="col-1">
+                -
               </div>
               <div class="col">
-                <label for="numbw-high">High</label>
-                <input class="form-control" type="number" id="numbw-high">
+                <!-- <label for="numbw-high">High</label> -->
+                <input class="form-control" type="number" id="numbw-high" value=10>
               </div>
-            </div>
-            <div class="row">
-              <div class="col">
+              <div class="col-3">
                 <button class="form-control" id="numbw-exec">Go</button>
               </div>
             </div>
+            <div class="row mt-3">
+              <div class="col mx-auto">
+                <h1 class="text-center" id="numbw-out">#</h1>
+              </div>
+            </div>
+            <!-- <div class="row mt-3"> -->
+            <!--   <div class="col"> -->
+            <!--     <button class="form-control" id="numbw-btn-hundred">Between 1 and 100</button> -->
+            <!--     <button class="form-control" id="numbw-btn-thousand">Between 1 and 1000</button> -->
+            <!--   </div> -->
+            <!-- </div> -->
           </div>
-          <div id="numbw-out"></div>
         </div>
         <div class="tab-pane fade" id="die-content" role="tabpanel" aria-labelledby="die-content-tab">TODO</div>
         <div class="tab-pane fade" id="kard-content" role="tabpanel" aria-labelledby="kard-content-tab">TODO</div>
