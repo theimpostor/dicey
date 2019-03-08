@@ -1,10 +1,21 @@
 {
   "hosting": {
-    "public": "dist",
+    "headers": [
+      {
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache, no-store, must-revalidate"
+          }
+        ],
+        "source": "/**"
+      }
+    ],
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ]
+    ],
+    "public": "dist"
   }
 }

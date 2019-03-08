@@ -10,8 +10,8 @@
 
     <title>dicey.xyz</title>
 
-    <script defer src="/__/firebase/5.8.5/firebase-app.js"></script>
-    <script defer src="/__/firebase/init.js"></script>
+    <!-- <script defer src="/__/firebase/5.8.5/firebase-app.js"></script> -->
+    <!-- <script defer src="/__/firebase/init.js"></script> -->
 
   </head>
   <body>
@@ -51,17 +51,21 @@
                 <button class="form-control" id="numbw-exec">Go</button>
               </div>
             </div>
-            <div class="row mt-3">
+            <div style="height: 100px" class="row mt-3">
               <div class="col mx-auto">
-                <h1 class="text-center" id="numbw-out"></h1>
+                <h1 class="display-1 text-center" id="numbw-out"></h1>
               </div>
             </div>
-            <!-- <div class="row mt-3"> -->
-            <!--   <div class="col"> -->
-            <!--     <button class="form-control" id="numbw-btn-hundred">Between 1 and 100</button> -->
-            <!--     <button class="form-control" id="numbw-btn-thousand">Between 1 and 1000</button> -->
-            <!--   </div> -->
-            <!-- </div> -->
+            <div class="row mt-3">
+              <div class="col">
+                <button class="form-control" id="numbw-preset-hundred">Between 1 and 100</button>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col">
+                <button class="form-control" id="numbw-preset-thousand">Between 1 and 1000</button>
+              </div>
+            </div>
           </div>
         </div>
         <div class="tab-pane fade" id="die-content" role="tabpanel" aria-labelledby="die-content-tab">TODO</div>
