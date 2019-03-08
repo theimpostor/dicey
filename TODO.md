@@ -1,0 +1,4 @@
+- dice
+- coinflip
+- up/down buttons
+- persist state

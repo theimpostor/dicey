@@ -2,13 +2,22 @@
   "hosting": {
     "headers": [
       {
+        "source": "**/*.@(css|js)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=365000000, immutable"
+          }
+        ]
+      },
+      {
+        "source": "index.html",
         "headers": [
           {
             "key": "Cache-Control",
             "value": "no-cache, no-store, must-revalidate"
           }
-        ],
-        "source": "/**"
+        ]
       }
     ],
     "ignore": [
