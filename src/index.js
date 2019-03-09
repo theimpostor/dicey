@@ -11,6 +11,18 @@ const numbw = {
     thousandBtn: document.querySelector('#numbw-preset-thousand')
   }
 }
+const dice = {
+  e: {
+    out: document.querySelector('#dice-out'),
+    presetBtns: [
+      document.querySelector('#dice-preset-1'),
+      document.querySelector('#dice-preset-2'),
+      document.querySelector('#dice-preset-3')
+    ]
+  },
+  count: 1
+}
+const dieFaces = [ '⚀', '⚁', '⚂', '⚃', '⚄', '⚅' ]
 
 // Functions
 function numbwExec () {
@@ -19,6 +31,17 @@ function numbwExec () {
   // TODO validation
   const rand = random.int(low, high)
   numbw.e.out.innerHTML = rand
+}
+
+function diceExec () {
+  let faces = []
+  let total = 0
+  for (let i = 0; i < dice.count; i++) {
+    const rand = random.int(0, 5)
+    faces.push(dieFaces[rand])
+    total += rand + 1
+  }
+  dice.e.out.innerHTML = faces.join('') + '<br>' + total
 }
 
 // Main
@@ -30,11 +53,19 @@ function main () {
     numbw.e.high.value = 100
     numbwExec()
   }, false)
+
   numbw.e.thousandBtn.addEventListener('click', function () {
     numbw.e.low.value = 1
     numbw.e.high.value = 1000
     numbwExec()
   }, false)
+
+  for (let i = 0; i < dice.e.presetBtns.length; i++) {
+    dice.e.presetBtns[i].addEventListener('click', function () {
+      dice.count = i + 1
+      diceExec()
+    }, false)
+  }
 }
 
 main()

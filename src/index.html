@@ -26,7 +26,7 @@
           <a class="nav-link active" id="numbw-content-tab" data-toggle="tab" href="#numbw-content" role="tab" aria-controls="numbw-content" aria-selected="true">Numbers</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="die-content-tab" data-toggle="tab" href="#die-content" role="tab" aria-controls="die-content" aria-selected="false">Dice</a>
+          <a class="nav-link" id="dice-content-tab" data-toggle="tab" href="#dice-content" role="tab" aria-controls="dice-content" aria-selected="false">Dice</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" id="kard-content-tab" data-toggle="tab" href="#kard-content" role="tab" aria-controls="kard-content" aria-selected="false">More</a>
@@ -48,7 +48,7 @@
                 <input class="form-control" type="number" id="numbw-high" value=10>
               </div>
               <div class="col-3">
-                <button class="form-control" id="numbw-exec">Go</button>
+                <button class="btn btn-outline-primary form-control" id="numbw-exec">Go</button>
               </div>
             </div>
             <div style="height: 100px" class="row mt-3">
@@ -58,17 +58,39 @@
             </div>
             <div class="row mt-3">
               <div class="col">
-                <button class="form-control" id="numbw-preset-hundred">Between 1 and 100</button>
+                <button class="btn btn-outline-primary form-control" id="numbw-preset-hundred">Between 1 and 100</button>
               </div>
             </div>
             <div class="row mt-3">
               <div class="col">
-                <button class="form-control" id="numbw-preset-thousand">Between 1 and 1000</button>
+                <button class="btn btn-outline-primary form-control" id="numbw-preset-thousand">Between 1 and 1000</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="tab-pane fade" id="die-content" role="tabpanel" aria-labelledby="die-content-tab">TODO</div>
+        <div class="tab-pane fade" id="dice-content" role="tabpanel" aria-labelledby="dice-content-tab">
+          <div class="container">
+            <div class="row mt-3 no-gutters">
+              <div class="col">
+                <p>Number of dice:</p>
+              </div>
+              <div class="col mx-1">
+                <button class="btn btn-outline-primary form-control" id="dice-preset-1">1</button>
+              </div>
+              <div class="col mx-1">
+                <button class="btn btn-outline-primary form-control" id="dice-preset-2">2</button>
+              </div>
+              <div class="col mx-1">
+                <button class="btn btn-outline-primary form-control" id="dice-preset-3">3</button>
+              </div>
+            </div>
+            <div style="height: 100px" class="row mt-3">
+              <div class="col">
+                <h1 class="display-1 text-center" id="dice-out"></h1>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="tab-pane fade" id="kard-content" role="tabpanel" aria-labelledby="kard-content-tab">TODO</div>
       </div>
 
