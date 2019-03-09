@@ -41,7 +41,7 @@ function diceExec () {
     faces.push(dieFaces[rand])
     total += rand + 1
   }
-  dice.e.out.innerHTML = faces.join('') + '<br>' + total
+  dice.e.out.innerHTML = faces.join(' ') + '<br>' + total
 }
 
 // Main
