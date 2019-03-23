@@ -5,6 +5,8 @@
   "scripts": {
     "preserve": "webpack",
     "serve": "firebase serve --only hosting",
+    "predeploy": "webpack",
+    "deploy": "firebase deploy",
     "build": "webpack",
     "watch": "webpack --watch",
     "start": "webpack-dev-server --open",

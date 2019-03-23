@@ -44,8 +44,22 @@ function diceExec () {
   dice.e.out.innerHTML = faces.join(' ') + '<br>' + total
 }
 
+function registerServiceWorker () {
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/service-worker.js').then(registration => {
+        console.log('SW registered: ', registration)
+      }).catch(registrationError => {
+        console.log('SW registration failed: ', registrationError)
+      })
+    })
+  }
+}
+
 // Main
 function main () {
+  registerServiceWorker()
+
   // wire up
   numbw.e.execBtn.addEventListener('click', numbwExec, false)
   numbw.e.hundredBtn.addEventListener('click', function () {
